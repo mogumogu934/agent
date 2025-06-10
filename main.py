@@ -41,9 +41,9 @@ def generate_content(client, messages, user_prompt, *args):
     print(f"Response: {resp.text}")
 
     if "--verbose" in args:
-        print(f"User prompt: {user_prompt}")
-        print(f"Prompt tokens: {resp.usage_metadata.prompt_token_count}")
-        print(f"Response tokens: {resp.usage_metadata.candidates_token_count}")
+        print(f'User prompt: {user_prompt}')
+        print(f'Prompt tokens: {resp.usage_metadata.prompt_token_count}')
+        print(f'Response tokens: {resp.usage_metadata.candidates_token_count}')
 
 if __name__ == "__main__":
     main()
